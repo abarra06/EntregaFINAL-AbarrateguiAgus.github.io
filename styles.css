@@ -1,0 +1,183 @@
+.color-fondo {
+  background-color: #00033a;
+}
+
+#nuestra-empresa {
+  background-color: hsl(237, 100%, 11%);
+}
+
+.color-texto-principal {
+  color: #00033a;
+}
+
+.color-texto {
+  color: azure;
+}
+
+.color-encabezado {
+  color: #c5c5c5;
+}
+
+.color-seccion {
+  background-color: aliceblue;
+}
+
+.color-horarios {
+  background-color: #ff0f0f;
+}
+
+.color-dias {
+  background-color: #ffffff;
+}
+
+.col-sm-2,
+.col-sm-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid #cd0606;
+  margin-bottom: 20px;
+}
+
+.my-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #cd0606;
+  border-radius: 50px;
+  color: #ffffff !important;
+  background-color: #00033a !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+.my-button:hover {
+  background-color: #db3434 !important;
+  color: white !important;
+}
+
+.col-md {
+  padding: 10px;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.btn-primary {
+  background-color: #ff0f0f !important;
+}
+
+.rounded-50 {
+  border-radius: 50%;
+}
+
+.rounded-20-px {
+  border-radius: 20px !important;
+}
+
+.btn-end {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border: none !important;
+}
+
+.title::first-line {
+  color: #00033a;
+}
+
+.mb-2,
+.mb-3 {
+  text-align: center;
+}
+
+.filadecubiertas {
+  max-height: 500px;
+}
+
+.btn-maps {
+  background-color: #00033a !important;
+  border: none !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.card-img {
+  height: 385px;
+  object-fit: contain;
+}
+
+.page-link {
+  color: #00033a !important;
+}
+
+.text-red {
+  color: #dc4b3e;
+}
+
+.my-second-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid #cd0606;
+  border-radius: 50px;
+  color: #00033a !important;
+  background-color: #fff !important;
+  transition: background-color 0.3s, color 0.3s;
+}
+.my-second-button:hover {
+  background-color: #db3434 !important;
+  color: white !important;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .d-none-sm {
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 980px) {
+  footer {
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
