@@ -1,0 +1,190 @@
+$color-principal: #00033a;
+$color-empresa: hsl(237, 100%, 11%);
+$color-texto: azure;
+$color-encabezado: #c5c5c5;
+$color-seccion: aliceblue;
+$color-horarios: #ff0f0f;
+$color-dias: #ffffff;
+$color-button-normal: $color-principal;
+$color-button-hover: #db3434;
+$border-color: #cd0606;
+$btn-border-radius: 50px;
+$btn-transition-time: 0.3s;
+
+// Mixins
+@mixin button-styles($color: $color-principal, $color-text: #ffffff) {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid $border-color;
+  border-radius: $btn-border-radius;
+  color: $color-text !important;
+  background-color: $color !important;
+  transition: background-color $btn-transition-time, color $btn-transition-time;
+
+  &:hover {
+    background-color: $color-button-hover !important;
+    color: white !important;
+  }
+}
+
+// Styles
+.color-fondo {
+  background-color: $color-principal;
+}
+
+#nuestra-empresa {
+  background-color: $color-empresa;
+}
+
+.color-texto-principal {
+  color: $color-principal;
+}
+
+.color-texto {
+  color: $color-texto;
+}
+
+.color-encabezado {
+  color: $color-encabezado;
+}
+
+.color-seccion {
+  background-color: $color-seccion;
+}
+
+.color-horarios {
+  background-color: $color-horarios;
+}
+
+.color-dias {
+  background-color: $color-dias;
+}
+
+.col-sm-2,
+.col-sm-4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid $border-color;
+  margin-bottom: 20px;
+}
+
+.my-button {
+  @include button-styles;
+}
+
+.col-md {
+  padding: 10px;
+}
+
+.vh-90 {
+  height: 90vh;
+}
+
+.min-vh-90 {
+  min-height: 90vh;
+}
+
+.min-vh-50 {
+  min-height: 50vh;
+}
+
+.btn-primary {
+  background-color: $color-horarios !important;
+}
+
+.rounded-50 {
+  border-radius: 50%;
+}
+
+.rounded-20-px {
+  border-radius: 20px !important;
+}
+
+.btn-end {
+  border-top-right-radius: 20px !important;
+  border-bottom-right-radius: 20px !important;
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border: none !important;
+}
+
+.title::first-line {
+  color: $color-principal;
+}
+
+.mb-2,
+.mb-3 {
+  text-align: center;
+}
+
+.filadecubiertas {
+  max-height: 500px;
+}
+
+.btn-maps {
+  background-color: $color-principal !important;
+  border: none !important;
+}
+
+.border-none {
+  border: none !important;
+}
+
+.card-img {
+  height: 385px;
+  object-fit: contain;
+}
+
+.page-link {
+  color: $color-principal !important;
+}
+
+.text-red {
+  color: #dc4b3e;
+}
+
+.my-second-button {
+  @include button-styles(#fff, $color-principal);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: slideIn 1s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .d-none-sm {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 980px) {
+  footer {
+    text-align: center;
+  }
+}
