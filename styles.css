@@ -1,3 +1,126 @@
+/*fonts*/
+@font-face {
+  font-family: "San Francisco-bolditalic";
+  src: url(fonts/SF-Pro-Display-BlackItalic.otf);
+  font-weight: bold;
+  font-style: bold;
+}
+/*regular*/
+@font-face {
+  font-family: "San Francisco-regular";
+  src: url(fonts/SF-Pro-Display-Regular.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/*bold*/
+@font-face {
+  font-family: "San Francisco";
+  src: url(fonts/SF-Pro-Display-Bold.otf);
+  font-weight: bold;
+  font-style: normal;
+}
+/*medium*/
+@font-face {
+  font-family: "San Francisco";
+  src: url(fonts/SF-Pro-Display-Medium.otf);
+  font-weight: medium;
+  font-style: medium;
+}
+/*black*/
+@font-face {
+  font-family: "San Francisco-black";
+  src: url(fonts/SF-Pro-Display-Black.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/*light*/
+@font-face {
+  font-family: "San Francisco";
+  src: url(fonts/SF-Pro-Display-Light.otf);
+  font-weight: lighter;
+  font-style: lighter;
+}
+/*heavy*/
+@font-face {
+  font-family: "San Francisco-heavy";
+  src: url(fonts/SF-Pro-Display-Heavy.otf);
+  font-weight: normal;
+  font-style: normal;
+}
+/*thing*/
+@font-face {
+  font-family: "San Francisco";
+  src: url(fonts/SF-Pro-Display-Thin.otf);
+  font-weight: thin;
+  font-style: thin;
+}
+/*ultra lifht*/
+@font-face {
+  font-family: "San Francisco-ultra";
+  src: url(fonts/SF-Pro-Text-Ultralight.otf);
+  font-weight: lighter;
+  font-style: lighter;
+}
+/*clases font*/
+.bold-italic {
+  font-family: "San Francisco-bolditalic";
+  font-weight: bold;
+  font-style: bold;
+}
+
+.heavy {
+  font-family: "San Francisco-heavy";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.ultra-light {
+  font-family: "San Francisco-ultra";
+  font-weight: lighter;
+  font-style: lighter;
+}
+
+.medium-font {
+  font-family: "San Francisco-regular";
+  font-weight: normal;
+  font-style: normal;
+}
+
+.light-font {
+  font-family: "San Francisco";
+  font-weight: lighter;
+  letter-spacing: 2px;
+}
+
+.thing-font {
+  font-family: "San Francisco";
+  font-weight: thin;
+  font-style: thin;
+}
+
+.subtitle {
+  font-family: "San Francisco";
+  font-weight: bold;
+  font-style: normal;
+}
+
+.card-body1 {
+  background-color: #00033a;
+}
+
+.card-body2 {
+  background-color: #010326;
+}
+
+.contenedor-quienes-somos {
+  top: 1158px;
+  left: 480px;
+  width: 258px;
+  height: 466px;
+  background-color: #010326;
+  border-radius: 5%;
+}
+
 .color-fondo {
   background-color: #00033a;
 }
@@ -16,6 +139,8 @@
 
 .color-encabezado {
   color: #c5c5c5;
+  font-family: "San Francisco";
+  font-weight: lighter;
 }
 
 .color-seccion {
@@ -23,7 +148,7 @@
 }
 
 .color-horarios {
-  background-color: #ff0f0f;
+  background-color: #CD0606;
 }
 
 .color-dias {
@@ -45,7 +170,7 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid #cd0606;
+  border: 2px solid;
   border-radius: 50px;
   color: #ffffff !important;
   background-color: #00033a !important;
@@ -73,7 +198,7 @@
 }
 
 .btn-primary {
-  background-color: #ff0f0f !important;
+  background-color: #CD0606 !important;
 }
 
 .rounded-50 {
@@ -134,7 +259,7 @@
   text-align: center;
   text-decoration: none;
   cursor: pointer;
-  border: 2px solid #cd0606;
+  border: 2px solid;
   border-radius: 50px;
   color: #00033a !important;
   background-color: #fff !important;

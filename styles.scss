@@ -3,7 +3,7 @@ $color-empresa: hsl(237, 100%, 11%);
 $color-texto: azure;
 $color-encabezado: #c5c5c5;
 $color-seccion: aliceblue;
-$color-horarios: #ff0f0f;
+$color-horarios: #CD0606;
 $color-dias: #ffffff;
 $color-button-normal: $color-principal;
 $color-button-hover: #db3434;
@@ -11,180 +11,308 @@ $border-color: #cd0606;
 $btn-border-radius: 50px;
 $btn-transition-time: 0.3s;
 
+/*fonts*/
+@font-face{
+    font-family: 'San Francisco-bolditalic';
+    src: url(fonts/SF-Pro-Display-BlackItalic.otf);
+    font-weight: bold;
+    font-style: bold;
+}
+
+/*regular*/
+@font-face {
+    font-family: "San Francisco-regular";
+    src: url(fonts/SF-Pro-Display-Regular.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*bold*/
+@font-face {
+    font-family: "San Francisco";
+    src: url(fonts/SF-Pro-Display-Bold.otf);
+    font-weight: bold;
+    font-style: normal;
+}
+/*medium*/
+@font-face {
+    font-family: "San Francisco";
+    src: url(fonts/SF-Pro-Display-Medium.otf);
+    font-weight: medium;
+    font-style: medium;
+}
+/*black*/
+@font-face {
+    font-family: "San Francisco-black";
+    src: url(fonts/SF-Pro-Display-Black.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*light*/
+@font-face {
+    font-family: "San Francisco";
+    src: url(fonts/SF-Pro-Display-Light.otf);
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+/*heavy*/
+@font-face {
+    font-family: "San Francisco-heavy";
+    src: url(fonts/SF-Pro-Display-Heavy.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*thing*/
+@font-face {
+    font-family: "San Francisco";
+    src: url(fonts/SF-Pro-Display-Thin.otf);
+    font-weight: thin;
+    font-style: thin;
+}
+ /*ultra lifht*/
+@font-face {
+    font-family: "San Francisco-ultra";
+    src: url(fonts/SF-Pro-Text-Ultralight.otf);
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+/*clases font*/
+
+.bold-italic{
+    font-family: 'San Francisco-bolditalic';
+    font-weight: bold;
+    font-style: bold;
+}
+.heavy{
+    font-family: 'San Francisco-heavy';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.ultra-light{
+    font-family: 'San Francisco-ultra';
+    font-weight: lighter;
+    font-style: lighter;
+}
+.medium-font{
+    font-family: 'San Francisco-regular';
+    font-weight: normal;
+    font-style: normal;
+}
+.light-font {
+    font-family: "San Francisco";
+    font-weight: lighter;
+    letter-spacing: 2px;
+}
+
+.thing-font{
+    font-family: 'San Francisco';
+    font-weight: thin;
+    font-style: thin;
+}
+
+.subtitle{
+  font-family: 'San Francisco';
+  font-weight: bold;
+    font-style: normal;
+}
+
+.card-body1 {
+    background-color: $color-principal;
+}
+
+.card-body2 {
+    background-color: #010326;
+}
+.contenedor-quienes-somos{
+  top: 1158px;
+  left: 480px;
+  width: 258px;
+  height: 466px;
+  background-color:#010326;
+  border-radius: 5%;
+}
 // Mixins
 @mixin button-styles($color: $color-principal, $color-text: #ffffff) {
-  display: inline-block;
-  padding: 10px 20px;
-  font-size: 16px;
-  text-align: center;
-  text-decoration: none;
-  cursor: pointer;
-  border: 2px solid $border-color;
-  border-radius: $btn-border-radius;
-  color: $color-text !important;
-  background-color: $color !important;
-  transition: background-color $btn-transition-time, color $btn-transition-time;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: $btn-border-radius;
+    color: $color-text !important;
+    background-color: $color !important;
+    transition: background-color $btn-transition-time, color $btn-transition-time;
 
-  &:hover {
-    background-color: $color-button-hover !important;
-    color: white !important;
-  }
+    &:hover {
+        background-color: $color-button-hover !important;
+        color: white !important;
+    }
 }
 
 // Styles
 .color-fondo {
-  background-color: $color-principal;
+    background-color: $color-principal;
 }
 
 #nuestra-empresa {
-  background-color: $color-empresa;
+    background-color: $color-empresa;
 }
 
 .color-texto-principal {
-  color: $color-principal;
+    color: $color-principal;
 }
 
 .color-texto {
-  color: $color-texto;
+    color: $color-texto;
 }
 
 .color-encabezado {
-  color: $color-encabezado;
+    color: $color-encabezado;
+    font-family: "San Francisco";
+    font-weight: lighter;
 }
 
 .color-seccion {
-  background-color: $color-seccion;
+    background-color: $color-seccion;
 }
 
 .color-horarios {
-  background-color: $color-horarios;
+    background-color: $color-horarios;
 }
 
 .color-dias {
-  background-color: $color-dias;
+    background-color: $color-dias;
 }
 
 .col-sm-2,
 .col-sm-4 {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border: 1px solid $border-color;
-  margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 1px solid $border-color;
+    margin-bottom: 20px;
 }
 
 .my-button {
-  @include button-styles;
+    @include button-styles;
 }
 
 .col-md {
-  padding: 10px;
+    padding: 10px;
 }
 
 .vh-90 {
-  height: 90vh;
+    height: 90vh;
 }
 
 .min-vh-90 {
-  min-height: 90vh;
+    min-height: 90vh;
 }
 
 .min-vh-50 {
-  min-height: 50vh;
+    min-height: 50vh;
 }
 
 .btn-primary {
-  background-color: $color-horarios !important;
+    background-color: $color-horarios !important;
 }
 
 .rounded-50 {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .rounded-20-px {
-  border-radius: 20px !important;
+    border-radius: 20px !important;
 }
 
 .btn-end {
-  border-top-right-radius: 20px !important;
-  border-bottom-right-radius: 20px !important;
-  border-top-left-radius: 0 !important;
-  border-bottom-left-radius: 0 !important;
-  border: none !important;
+    border-top-right-radius: 20px !important;
+    border-bottom-right-radius: 20px !important;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+    border: none !important;
 }
 
 .title::first-line {
-  color: $color-principal;
+    color: $color-principal;
 }
 
 .mb-2,
 .mb-3 {
-  text-align: center;
+    text-align: center;
 }
 
 .filadecubiertas {
-  max-height: 500px;
+    max-height: 500px;
 }
 
 .btn-maps {
-  background-color: $color-principal !important;
-  border: none !important;
+    background-color: $color-principal !important;
+    border: none !important;
 }
 
 .border-none {
-  border: none !important;
+    border: none !important;
 }
 
 .card-img {
-  height: 385px;
-  object-fit: contain;
+    height: 385px;
+    object-fit: contain;
 }
 
 .page-link {
-  color: $color-principal !important;
+    color: $color-principal !important;
 }
 
 .text-red {
-  color: #dc4b3e;
+    color: #dc4b3e;
 }
 
 .my-second-button {
-  @include button-styles(#fff, $color-principal);
+    @include button-styles(#fff, $color-principal);
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .fade-in {
-  animation: fadeIn 1.5s ease-in-out;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 @keyframes slideIn {
-  from {
-    transform: translateY(-50px);
-  }
-  to {
-    transform: translateY(0);
-  }
+    from {
+        transform: translateY(-50px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 
 .slide-in {
-  animation: slideIn 1s ease-in-out;
+    animation: slideIn 1s ease-in-out;
 }
 
 @media only screen and (max-width: 1024px) {
-  .d-none-sm {
-    display: none !important;
-  }
+    .d-none-sm {
+        display: none !important;
+    }
 }
 
 @media only screen and (min-width: 375px) and (max-width: 980px) {
-  footer {
-    text-align: center;
-  }
+    footer {
+        text-align: center;
+    }
 }
